@@ -1,0 +1,79 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* .main {
+  background-image: url(assets/wallpaper.jpg);
+  width: 100dvw;
+  background-repeat: no-repeat;
+  /* background-size: contain; *
+  background-position: center;
+} */
+
+.wallpaper {
+  position: absolute;
+  z-index: -3;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.navbar {
+  height: 4dvh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.home {
+  background-color: transparent;
+}
+/* .home {
+  /* position: absolute; */
+/* height: 97dvh; *
+  width: 100%;
+  background-color: pink;
+  /* bottom: 10; *
+} */
+
+.dock {
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+  margin-bottom: 10px;
+  border-radius: 0.7rem;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.app {
+  height: 36px;
+  width: 36px;
+  /* background-color: greenyellow; */
+  margin: 2px;
+  border-radius: 0.5rem;
+  transition: 200ms;
+}
+
+.separator {
+  height: 36px;
+  width: 0.5px;
+  /* justify-items: center; */
+  background-color: rgba(51, 50, 50, 0.644);
+  margin: 0 5px 0;
+}
+
+.app:hover {
+  /* scale: 1.5; */
+  height: 54px;
+  width: 54px;
+}
