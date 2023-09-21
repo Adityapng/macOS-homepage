@@ -1,6 +1,20 @@
+@font-face {
+  font-family: SFPro;
+  src: url(assets/Fonts/SF-Pro.ttf) format("truetype");
+}
+@font-face {
+  font-family: SFProText-med;
+  src: url(assets/Fonts/SF-Pro-Text-Medium.otf) format("opentype");
+}
+@font-face {
+  font-family: SFProText-bold;
+  src: url(assets/Fonts/SF-Pro-Text-Bold.otf) format("opentype");
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family: SFPROtext-med;
 }
 
 /* .main {
@@ -19,49 +33,103 @@ body {
 }
 
 .navbar {
-  height: 4dvh;
+  height: 23px;
   width: 100%;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.home {
-  background-color: transparent;
+.navbar > .content {
+  height: 16px;
+  width: calc(100dvw - 16px);
+  outline: 1px solid red;
 }
-/* .home {
-  /* position: absolute; */
-/* height: 97dvh; *
-  width: 100%;
-  background-color: pink;
-  /* bottom: 10; *
-} */
+
+.content > .leftMenu,
+.content > .rightMenu {
+  height: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.leftMenu > .apple {
+  padding: 0 4px;
+}
+
+.bold {
+  font-family: sfprotext-bold;
+}
+
+.text {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
 
 .dock {
   bottom: 0;
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   left: 50%;
   transform: translateX(-50%);
-  padding: 3px;
+  padding: 1px;
   margin-bottom: 10px;
   border-radius: 0.7rem;
-  background: rgba(255, 255, 255, 0.3);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.app {
-  height: 36px;
-  width: 36px;
-  /* background-color: greenyellow; */
-  margin: 2px;
+.app,
+.app-10 {
+  height: 42px;
+  width: 42px;
+  background-size: cover;
   border-radius: 0.5rem;
   transition: 200ms;
+}
+
+.app:nth-child(1) {
+  background-image: url(assets/appIcons/icons/png-icons/chrome.png);
+}
+.app:nth-child(2) {
+  background-image: url(assets/appIcons/icons/png-icons/imessage.png);
+}
+.app:nth-child(3) {
+  background-image: url(assets/appIcons/icons/png-icons/vscode.png);
+}
+.app:nth-child(4) {
+  background-image: url(assets/appIcons/icons/png-icons/terminal.png);
+}
+.app:nth-child(5) {
+  background-image: url(assets/appIcons/icons/png-icons/safari.png);
+}
+.app:nth-child(6) {
+  background-image: url(assets/appIcons/icons/png-icons/netflix.png);
+}
+.app:nth-child(7) {
+  background-image: url(assets/appIcons/icons/png-icons/photos.png);
+}
+.app:nth-child(8) {
+  background-image: url(assets/appIcons/icons/png-icons/firefox.png);
+}
+.app:nth-child(9) {
+  background-image: url(assets/appIcons/icons/png-icons/spotify.png);
+}
+.app-10 {
+  background-image: url(assets/appIcons/icons/png-icons/maps.png);
 }
 
 .separator {
@@ -72,8 +140,9 @@ body {
   margin: 0 5px 0;
 }
 
-.app:hover {
+.app:hover,
+.app-10:hover {
   /* scale: 1.5; */
-  height: 54px;
-  width: 54px;
+  height: 60px;
+  width: 60px;
 }
