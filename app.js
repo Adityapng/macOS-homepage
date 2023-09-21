@@ -27,3 +27,36 @@ setInterval(() => {
   document.getElementById("time").innerHTML = t;
   document.getElementById("date").innerHTML = date;
 });
+
+document.getElementById("liveapp").innerHTML = "Liveapp";
+
+function chrome() {
+  document.getElementById("liveapp").innerHTML = "Chrome";
+}
+function imessage() {
+  document.getElementById("liveapp").innerHTML = "iMessage";
+}
+function vscode() {
+  document.getElementById("liveapp").innerHTML = "Code";
+}
+function terminal() {
+  document.getElementById("liveapp").innerHTML = "Terminal";
+}
+function safari() {
+  document.getElementById("liveapp").innerHTML = "Safari";
+}
+function netflix() {
+  document.getElementById("liveapp").innerHTML = "Netflix";
+}
+function photos() {
+  document.getElementById("liveapp").innerHTML = "Photos";
+}
+function firefox() {
+  document.getElementById("liveapp").innerHTML = "Mozilla Firefox";
+}
+function spotify() {
+  document.getElementById("liveapp").innerHTML = "Spotify";
+}
+function maps() {
+  document.getElementById("liveapp").innerHTML = "Maps";
+}
