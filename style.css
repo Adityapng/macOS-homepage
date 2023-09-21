@@ -11,19 +11,15 @@
   src: url(assets/Fonts/SF-Pro-Text-Bold.otf) format("opentype");
 }
 
+/* * {
+  outline: 1px solid greenyellow;
+} */
+
 body {
   padding: 0;
   margin: 0;
   font-family: SFPROtext-med;
 }
-
-/* .main {
-  background-image: url(assets/wallpaper.jpg);
-  width: 100dvw;
-  background-repeat: no-repeat;
-  /* background-size: contain; *
-  background-position: center;
-} */
 
 .wallpaper {
   position: absolute;
@@ -45,23 +41,26 @@ body {
 }
 
 .navbar > .content {
-  height: 16px;
+  height: 23px;
   width: calc(100dvw - 16px);
-  outline: 1px solid red;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
 .content > .leftMenu,
 .content > .rightMenu {
-  height: 16px;
+  height: 23px;
   display: flex;
   gap: 4px;
-  background-color: rgba(0, 255, 255, 0.288);
 }
 
 .leftMenu > .apple {
   padding: 0 4px;
+  transition: 100ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bold {
@@ -74,6 +73,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0 4px;
+  transition: 100ms;
 }
 
 .icon {
@@ -85,6 +85,28 @@ body {
 
 .dateNtime {
   display: flex;
+  font-size: 10px;
+}
+
+.date,
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {
+  padding: 0 4px;
+}
+
+.apple:hover,
+.text:hover,
+.icon:hover,
+.date:hover,
+.time:hover {
+  color: aliceblue;
+  fill: aliceblue;
+  /* background-color: rgba(0, 0, 0, 0.199); */
 }
 
 .dock {
@@ -114,7 +136,6 @@ body {
   border-radius: 0.5rem;
   transition: 200ms;
 }
-
 .app:nth-child(1) {
   background-image: url(assets/appIcons/icons/png-icons/chrome.png);
 }
